@@ -7,13 +7,37 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Jquery JS -->
+    <script src="jquery.js"></script>
+    
     <!-- Main Java Script -->
-    <script src="app.js"></script>
+    <script defer src="app.js"></script>
 
     <title>Lets Play - Tomagotchi</title>
 </head>
 <body>
     <h2 class="Title">Tomagotchi</h2>
-    
-</body>
+    <canvas id="game" width="480" height="480"></canvas>
+
+    <p id="hatch-instructions">Click here to make it hatch:
+      <button id="hatch">Hatch</button></p>
+
+    <div id="levels">
+      <p id="Boredom">Bored: 10</p>
+      <p id="sleepiness">Sleepiness: 10</p>
+      <p id="hunger">Hunger: 10</p>
+      <p id="age">Age: 0 hours</p>
+    </div>
+
+    <p id="action-buttons">
+      <button id="feed-bread">Food</button>
+      <button id="feed-sweets">Desert</button>
+      <button id="give-medicine">Medicine</button>
+      <button id="play-game">Play game</button>
+    </p>
+
+    <p id="messages"></p>
+  </body>
 </html>
+© 2020 General Assembly Project 0, Inc.
+<!-- https://github.com/bennorth/webapp-tamagotchi/blob/master/page.html -->

@@ -5,9 +5,10 @@ class tamagotchi {
     constructor(name, creatureType) {
         this.name = name
         this.creatureType = creatureType
-        this.foodInTummy = 10
-        this.restedness = 10
-        this.health = 10
+        this.hunger = 10
+        this.sleepiness = 10
+        this.boredom = 10
+        this.age = age
         this.stopIntervals = []
       }
 }
