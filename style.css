@@ -2,6 +2,14 @@ body{
     text-align: center;
     background-image: url(https://media0.giphy.com/media/VDAZZhE97qSCKSe6vJ/200w.webp?cid=ecf05e47d69b804c6e88abe50c9c045af8eb48b536250cdc&rid=200w.webp);
 }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+}
 .Title{
     text-align: center;
     color: rgb(78, 78, 150);
