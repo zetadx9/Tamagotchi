@@ -6,3 +6,28 @@ body{
     text-align: center;
     color: rgb(78, 78, 150);
 }
+
+#sleep {
+    border-radius: 75%;
+    background-color: blue;
+}
+
+#food {
+    border-radius: 75%;
+    background-color: blueviolet;
+}
+
+#play {
+    border-radius: 75%;
+    background-color: chartreuse;
+}
+
+#play-game {
+    border-radius: 75%;
+    background-color: crimson;
+}
+
+#hatch {
+    border-radius: 75%;
+    background-color: cyan;
+}
