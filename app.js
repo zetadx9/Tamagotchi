@@ -42,14 +42,35 @@ class tamagotchi {
 }
 
 
+
+
 // Start Game
 
 //document.getElementById("play-game").addEventListener("click", gameStart);
 $("#play-game").on("click",gameStart)
 
 function gameStart () {
-console.log("gameStart");
+//$('img').hide();
+//$//('#Age1').css('style', '')
+console.log("Game has started!")
+setInterval(function() {
+    $('#change').attr('src','image2.gif');
+  }, 30000); // <- 1000ms = 1s
+
+  setInterval(function() {
+    $('#change').attr('src','image3.gif');
+  }, 600000); // <- 1000ms = 1s
+
+  setInterval(function() {
+    $('#change').attr('src','image4.gif');
+  }, 90000); // <- 1000ms = 1s
+
+  setInterval(function() {
+    $('#change').attr('src','image5.gif');
+  }, 120000); // <- 1000ms = 1s
+clearTimeout();
 }
+
 
 
 
@@ -67,7 +88,7 @@ $("#food").on("click",petHungry)
 
 // Pet Rest
 //document.getElementById("sleep").addEventListener("click", petSleepy);
-$("#sleep").on("click",petSleepy)
+$("#sleep").on("click",petSleepy);
 
 function petSleepy () {
 console.log("petSleepy");
@@ -77,11 +98,10 @@ console.log("petSleepy");
 
 // Pet Play Time
 //document.getElementById("play").addEventListener("click", petBored);
-$("#play").on("click",petBored)
+$("#play").on("click",petBored);
 
-function petBored () {
-console.log("Play");
-}
+$('#Boredom').append('9');
+
 
 // Pet Health
 
