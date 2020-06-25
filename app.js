@@ -19,28 +19,31 @@ class tamagotchi {
 
 //document.getElementById("play-game").addEventListener("click", gameStart);
 $("#play-game").on("click",gameStart)
+console.log($("#age").val());
 
 function gameStart () {
-//$('img').hide();
-//$//('#Age1').css('style', '')
-console.log("Game has started!")
-setInterval(function() {
-    $('#change').attr('src','image2.gif');
-  }, 3000); // <- 1000ms = 1s
+console.log("Game has started!");
 
-  setInterval(function() {
-    $('#change').attr('src','image3.gif');
-  }, 60000); // <- 1000ms = 1s
-
-  setInterval(function() {
-    $('#change').attr('src','image4.gif');
-  }, 9000); // <- 1000ms = 1s
-
-  setInterval(function() {
-    $('#change').attr('src','image5.gif');
-  }, 12000); // <- 1000ms = 1s
-clearTimeout();
+let num = parseInt($('#hungerNum'));
+let count = 0;
+function myCount() {
+    // your original if-else wasn't allowing count to increment past 1
+    if (count > 10) {
+        count = 0;
+    }
+    $('#hungerNum').text(count);
+    // increment count regardless of its current value
+    count++;
 }
+
+setInterval(myCount, 500); 
+  
+}
+
+
+
+
+
 
 
 
