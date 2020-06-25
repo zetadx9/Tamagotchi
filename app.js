@@ -29,7 +29,11 @@ let aging = 0;
 function gameStart () {
 console.log("Game has started!");
 
+
 let endTimer = setInterval(myCount, 1000); 
+
+
+
 
 function myCount() {
     // your original if-else wasn't allowing count to increment past 1
@@ -92,7 +96,6 @@ function petPlay() {
     $('#boredNum').text(Bcount);
     // increment count regardless of its current value
 }
-}
 
 function myAgeCount() {
     // your original if-else wasn't allowing count to increment past 1
@@ -131,6 +134,10 @@ function myAgeCount() {
     // increment count regardless of its current value
     aging++;
 } setInterval(myAgeCount, 5000); 
+
+
+}
+
 
 
     
