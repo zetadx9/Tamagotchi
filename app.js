@@ -33,9 +33,9 @@ let endTimer = setInterval(myCount, 1000);
 
 function myCount() {
     // your original if-else wasn't allowing count to increment past 1
-    if (count >= 10 || Scount >= 10 || Bcount >=10) {
+    if (count >= 10 || Scount >= 10 || Bcount >=10 || aging >= 10) {
        clearInterval(endTimer);
-       console.log("Timer Stopped");
+       console.log("You Lose");
     }
     if(count < 0)
     {
@@ -59,9 +59,6 @@ function myCount() {
     Scount++;
     Bcount++;
 } 
-
-
-
 
 $("#food").on("click",petHungry)
 
@@ -95,77 +92,46 @@ function petPlay() {
     $('#boredNum').text(Bcount);
     // increment count regardless of its current value
 }
-
-  
 }
 
 function myAgeCount() {
     // your original if-else wasn't allowing count to increment past 1
-    if (aging > 20) {
+    if (aging > 10) {
         aging = 0;
     }
-    if (count >= 10 || Scount >= 10 || Bcount >=10) {
+    if (count >= 10 || Scount >= 10 || Bcount >=10 ) {
         clearInterval(endTimer);
         console.log("Timer Stopped");
     }
-    if(aging === 5)
+    if(aging === 4)
     {
   $('#change').attr('src','image2.gif');   
     }
     
-    if(aging === 10)
+    if(aging === 6)
     {
   $('#change').attr('src','image3.gif');   
     }
     
-    if(aging === 15)
+    if(aging === 8)
     {
   $('#change').attr('src','image4.gif');   
     }
     
-    if(aging === 20)
+    if(aging === 10)
     {
   $('#change').attr('src','image5.gif');   
     }
 
-    if(aging >= 30)
+    if(aging === 10)
     {
-        clearInterval(myAgeCount);
+        console.log('You Win');
     }
     $('#ageNum').text(aging);
     // increment count regardless of its current value
     aging++;
 } setInterval(myAgeCount, 5000); 
 
-// Pet Feed
-//document.getElementById("food").addEventListener("click", petHungry);
-
 
     
- //petHungry();
-
-
-// Pet Rest
-//document.getElementById("sleep").addEventListener("click", petSleepy);
-$("#sleep").on("click",petSleepy);
-
-function petSleepy () {
-console.log("petSleepy");
-
-}
-
-
-// Pet Play Time
-//document.getElementById("play").addEventListener("click", petBored);
-$("#play").on("click",petBored);
-
-$('#Boredom').append('9');
-
-
-// Pet Health
-
-
-function petHealth () {
-
-}
  
