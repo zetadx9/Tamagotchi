@@ -35,7 +35,19 @@ img {
     background-color: crimson;
 }
 
-#hatch {
-    border-radius: 75%;
-    background-color: cyan;
+#Boredom {
+    background-color: chartreuse;
+}
+
+#sleepiness{
+    background-color: blue;
+}
+
+#hunger {
+    background-color: blueviolet;
+}
+
+#age {
+    background-color: rgb(21, 100, 74);
+
 }
