@@ -9,36 +9,7 @@ class tamagotchi {
         this.sleepiness = 10;
         this.boredom = 10;
         this.age = 0;
-          this.tired = function() {
-            this.sleepiness--;
-            console.log('Bleeeeh! Sick!!!!!!');
-            console.log(this.name + ' has current health = ' + this.sleepiness);
-          };
-          this.bored = function(){
-            this.boredom--;
-            console.log('Yaaaawwwwn! So tired');
-            console.log(this.name + ' has current restedness = ' + this.boredom);
-          };
-          this.start = function(){
-            console.log("Starting " + this.name);
-            var self = this;
-            this.hungerTimer = setInterval(function() {
-              self.cry();
-            }, 6000);
-            this.yawnTimer = setInterval(function() {
-              self.tired();
-            }, 10000);
-            this.boredTimer = setInterval(function() {
-              self.bored();
-            }, 25000);
-          };
-          this.stop = function(){
-            console.log("Stopping " + this.name);
-            clearInterval(this.hungerTimer);
-            clearInterval(this.yawnTimer);
-            clearInterval(this.boredTimer);
-          };
-        };
+    }
 }
 
 
@@ -55,19 +26,19 @@ function gameStart () {
 console.log("Game has started!")
 setInterval(function() {
     $('#change').attr('src','image2.gif');
-  }, 30000); // <- 1000ms = 1s
+  }, 3000); // <- 1000ms = 1s
 
   setInterval(function() {
     $('#change').attr('src','image3.gif');
-  }, 600000); // <- 1000ms = 1s
+  }, 60000); // <- 1000ms = 1s
 
   setInterval(function() {
     $('#change').attr('src','image4.gif');
-  }, 90000); // <- 1000ms = 1s
+  }, 9000); // <- 1000ms = 1s
 
   setInterval(function() {
     $('#change').attr('src','image5.gif');
-  }, 120000); // <- 1000ms = 1s
+  }, 12000); // <- 1000ms = 1s
 clearTimeout();
 }
 

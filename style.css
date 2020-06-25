@@ -32,22 +32,28 @@ img {
 
 #play-game {
     border-radius: 75%;
-    background-color: crimson;
+    background-color: rgb(241, 144, 163);
 }
 
 #Boredom {
-    background-color: chartreuse;
+    background-color: rgb(193, 229, 157);
+    margin: 0 325px 0 325px;
+
 }
 
 #sleepiness{
-    background-color: blue;
+    background-color: rgb(148, 148, 230);
+    margin: 0 325px 0 325px;
+
 }
 
 #hunger {
-    background-color: blueviolet;
+    background-color: rgb(170, 129, 207);
+    margin: 0 325px 0 325px;
+
 }
 
 #age {
-    background-color: rgb(21, 100, 74);
-
+    background-color: rgb(120, 231, 194);
+    margin: 0 325px 0 325px;
 }
