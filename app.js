@@ -29,6 +29,9 @@ let aging = 0;
 function gameStart () {
 console.log("Game has started!");
 
+// $("#food").on("click",petHungry)
+// function hactch () {
+//     console.log("Game has started!");
 
 let endTimer = setInterval(myCount, 1000); 
 
