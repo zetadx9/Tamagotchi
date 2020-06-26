@@ -17,3 +17,13 @@
                   The pet will be given a proper burial at the last stage of life. 
                   
                   -- My design changed to a Digimon like tamagotchi design. I found gifs that move and decided to use them as my character.
+
+                                                       User Story
+                                  1.   The game starts by pressing the start/hatch button
+                                  2.   You have 4 bars - Hunger, Sleep, Play, Age
+                                  3.   The Age increases every 5 seconds
+                                  4.   If food, boredom, and sleepiness gets to 10, the game ends
+                                  5.   If age reaches 10 - you win and the game ends.
+                                  6.   A tombstone will end the game.
+                                  7.   The digimon will stop evolving when you win.
+                                  8. The character will evolve every time the age increases by 2.
