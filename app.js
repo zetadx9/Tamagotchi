@@ -37,7 +37,7 @@ function gameStart () {
 
         function myCount() {
             // your original if-else wasn't allowing count to increment past 1
-    if (count >= 10 || Scount >= 10 || Bcount >=10 || aging >= 10) {
+    if (count >= 10 || Scount >= 10 || Bcount >=10 || aging === 10) {
        clearInterval(endTimer);
        console.log("You Lose");
     }
@@ -110,10 +110,21 @@ function gameStart () {
            // Age Function
           function myAgeCount() {
     // your original if-else wasn't allowing count to increment past 1
+    if (count >= 10 || Scount >= 10 || Bcount >=10) {
+        clearInterval(endTimer);
+        console.log("You lose");
+     }
+     if (aging === 10) {
+        clearInterval(endTimer);
+        console.log("You Win");
+     }
          if (aging > 10) {
              aging = 0;
              }
          if (count >= 10 || Scount >= 10 || Bcount >=10 ) {
+         $('#change').attr('src','dead.gif');   
+         $.off('#change').attr('src','dead.gif');   
+
          clearInterval(endTimer);
          console.log("Timer Stopped");
        }
@@ -142,11 +153,13 @@ function gameStart () {
     
     if(aging === 10)
       {
-     $('#change').attr('src','image5.gif');   
+     $('#change').attr('src','image5.gif').finish();   
       }
 
      if(aging === 10)
        {
+        $('#change').attr('src','image5.gif');   
+        $.off('#change').attr('src','image5.gif'); 
         console.log('You Win');
        }
      $('#ageNum').text(aging);
