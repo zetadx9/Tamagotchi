@@ -5,7 +5,7 @@
 
 ![image](https://media0.giphy.com/media/JsnVqAdu5OXDm2uIxp/giphy.gif?cid=ecf05e472b86a8261f02583306c6767bbfa51bc9970ffac1&rid=giphy.gif)
 
-                                                       Wireframe 
+                                                        
                   My game design will be based off the original tomagotchi. The pet will be able to
                   eat, exercise, play, age, and die. The death of the pet will be dependent on the 
                   age of the pet and the amount of food, exercise, and play time it receives.
