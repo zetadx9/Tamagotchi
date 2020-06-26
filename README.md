@@ -15,3 +15,5 @@
                   pet). The pet will live up to the age of 6. That means there will be 6 stages to the pet.
                   (Each age will be represented by the color of the pet.) 6 ages will be represented by six colors.
                   The pet will be given a proper burial at the last stage of life. 
+                  
+                  -- My design changed to a Digimon like tamagotchi design. I found gifs that move and decided to use them as my character.
