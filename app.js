@@ -148,18 +148,18 @@ function gameStart () {
     
       if(aging === 8)
       {
-     $('#change').attr('src','image4.gif');   
+     $('#change').attr('src','image7.gif');   
       }
     
     if(aging === 10)
       {
-     $('#change').attr('src','image5.gif').finish();   
+     $('#change').attr('src','image6.gif').finish();   
       }
 
      if(aging === 10)
        {
-        $('#change').attr('src','image5.gif');   
-        $.off('#change').attr('src','image5.gif'); 
+        $('#change').attr('src','image6.gif');   
+        $.off('#change').attr('src','image6.gif'); 
         console.log('You Win');
        }
      $('#ageNum').text(aging);
